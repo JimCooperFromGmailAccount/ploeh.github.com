@@ -276,4 +276,28 @@ public static IReadOnlyCollection<int> Continuation(int n) {
 		</div>
 		<div class="comment-date">2023-05-08 15:30 UTC</div>
 	</div>
+
+    <div class="comment" id="896f7e7c979144438a6e7f1a66dd72ea">
+	    <div class="comment-author">Jim Cooper</div>
+	        <div class="comment-content">
+		    <p>
+		      The problem is that code coverage is not the same as test coverage. Code coverage tools will tell 
+              you what code was executed in a test run. Some, like nCrunch, will mark the lines in your editor
+              to show you whether each was executed or not, and mark the ones in failing tests, among other things.
+              <br>
+              This has little to do with whether the line was tested. I've written high-level tests that have
+              executed hundreds of lines of code. But the tests were only for the high-level code, of course.
+              <br>
+              This is the best the tools can do, because they are not smart enough to tell whether you actually
+              tested each branch or not.
+              <br>
+              CC and related metrics will usually give you an indication of the lower bound of the number of 
+              tests you need to write, as you expected. You just can't use a code coverage tool to tell you've 
+              completely tested code. It may tell you that you have not yet written enough.
+              <br>
+              Complete coverage at 100% is a minimum but not sufficient condition for that.
+		    </p>
+		</div>
+		<div class="comment-date">2023-05-09 21:20 UTC</div>
+    </div>
 </div>
